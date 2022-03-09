@@ -17,7 +17,7 @@ function returnFunction(firstName, lastName){
 function convertToGigabytes(mega){
 
  document.getElementById('example3').innerHTML= " To convert from megabytes to gigabytes, Multiply your"+
- " figure by 0.001 (or divide by 1000) In this example we will use division. To converty 1000000MGB"
+ " figure by 0.001 (or divide by 1000). In this example we will use division. To converty 1000000MGB"
 
 
 let result = document.getElementById("answer").innerHTML= (mega/1000)+"GB";

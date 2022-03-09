@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset='utf-8'>
+    <title> Js Objects</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <h1> JavaScript Objects</h1>
+
+    <div>
+        <p id="example1">What is an object? (press submit to see answer)</p>
+
+        <button onclick="answer()">submit</button>
+    </div>
+
+    <div>
+        <p> We can create a method inside an object, to display any information.</p>
+
+        <p id="example2"></p>
+
+        <button onclick="getInfo()">submit</button>
+    </div>
+
+    <div>
+        <h2> What is this keyword</h2>
+        <section> this refers to an object in JavaScript!</section>
+        <section>It depends on how this is being used or called.</section>
+        <section>IN AN OBJECtT METHOD: this refers to the object. </section>
+        <section>ALONE: this refers to the global object.</section>
+        <section>IN A FUNCTION: this refers to the global object.</section>
+        <section>IN AN EVENT: this refers to the element that received the event.</section>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

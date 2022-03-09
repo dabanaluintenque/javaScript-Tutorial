@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="e">
+
+<head>
+    <meta charset="utf-8">
+
+    <title> Functions</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+
+<body>
+
+    <h1> JavaScript Functions</h1>
+
+    <div>
+        <section> Functions: <small style="font-style: italic">is a block of code that perform a particular
+                task.</small>
+        </section>
+        <p> The code to be executed, in the function, is placed inside the {} braces.</p>
+
+        <section>Function Parameters: <small> are listed inside the parentheses () in the definition of the
+                function.</small>
+        </section>
+
+        <section>Arguments: <small>are the values received by the function when it is invoked.
+            </small> <br>
+            <small id="a">Inside the function, the arguments behave as local variables.<br>
+            </small>
+            <note> Note:<small> Since local variables are only recoginized insided their functions, variables with the
+                    same name can be used in different function. <br>
+                    Local variables are created when a function starts, and deleted when the function is completed.
+                </small>
+            </note>
+        </section>
+
+    </div>
+
+    <div>
+        <h2>Regular Function</h2>
+        <p id="example1">Change the content of this message using regular function. (press submit)</p>
+        <button type="button" onclick="regularFunction()">submit</button>
+    </div>
+
+    <div>
+        <h2>Return Function</h2>
+        <p id="example2">When JavaScript reaches a return statement, the function will stop executing. (press submit)
+        </p>
+        <button type="button" onclick="returnFunction('Dabana', 'Intenque')">submit</button>
+
+        <p id="example3"> How to convert megabytes to gigabytes? (press submit) </p>
+
+        <message id="answer"></message> <br>
+
+        <button type='button' onclick="convertToGigabytes(1e6)">submit</button>
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

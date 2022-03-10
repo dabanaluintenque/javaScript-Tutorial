@@ -11,29 +11,63 @@
 </head>
 
 <body>
-    <h1>Adding String to a Number in JS</h1>
 
-    <section id="message1"></section>
+    <div>
+        <h1>Adding String to a Number in JS</h1>
 
-    <p id='addition1'> Click the button to see the result of: "5" + 7 +7</p>
+        <section id="message1"></section>
 
-    <button type='button' onclick="StringAddition()">Click</button>
+        <p id='addition1'> Click the button to see the result of: "5" + 7 +7</p>
 
-    <section id="message2"></section>
+        <button type='button' onclick="StringAddition()">Click</button>
 
-    <p id="addition2"> Click the button to see the result of: 7+ "5" + 7</p>
+        <section id="message2"></section>
 
-
-    <button type="button" onClick="StringAddition2()">Click</button>
-
-
-    <section id="message3"></section>
-
-    <p id="addition3">Click the button to see the result of: 7 + 7 + "5" </p>
+        <p id="addition2"> Click the button to see the result of: 7+ "5" + 7</p>
 
 
-    <button type='button' onclick="StringAddition3()">Click</button>
+        <button type="button" onClick="StringAddition2()">Click</button>
 
+
+        <section id="message3"></section>
+
+        <p id="addition3">Click the button to see the result of: 7 + 7 + "5" </p>
+
+
+        <button type='button' onclick="StringAddition3()">Click</button>
+    </div>
+
+    <div>
+
+        <h2> String methods</h2>
+        <p>There are 3 methods for extracting a part of a String.</p>
+        <ul>
+            <li>slice(start, end)</li>
+            <li>substring(start, end)</li>
+            <li>substr(start, length)</li>
+            <li>charAt(position)</li>
+        </ul>
+
+        <p id="sliceMethod">How to use String slice () Method? (click the button to learn)</p>
+        <p id="example4"></p>
+        <button onclick="usingSliceFunction()">sliceMethod</button>
+
+        <p id="substringMethod">How to use String substring() Method? (click the button to learn)</p>
+        <p id="example5"></p>
+        <button onclick="usingSubstringFunction()">substringMethod</button>
+
+        <div>
+            <p id="charAt">Extracting String Character Using charAt(). (click the button.)</p>
+            <p>The charAt() method returns the character at a specified index (position) in a string.</p>
+
+            <p id="example6">Hello Dabana</p>
+
+            <button onclick="usingCharAt()">charAt</button>
+
+        </div>
+
+
+    </div>
 
     <script src="./app.js"></script>
 

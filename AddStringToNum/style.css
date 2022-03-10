@@ -1,5 +1,36 @@
 
+
+body{
+
+    margin-left: 10%;
+}
 section{
 
     color: green;
 }
+
+h2{
+
+    margin-left: 20%;
+}
+
+#sliceMethod{
+
+    color: green;
+
+    font-size: 150%;
+}
+#substringMethod{
+
+    color:blue;
+
+    font-size:150%;
+}
+
+#charAt{
+
+    color: red;
+
+    font-size: 150%;
+}
+

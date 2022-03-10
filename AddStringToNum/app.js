@@ -40,3 +40,33 @@ function StringAddition3(){
     document.getElementById('message3').innerHTML= "If you have a string at the end of the addition, it will do the addition first and treat the last as a String.";
     document.getElementById('addition3').innerHTML= result;
 }
+
+
+function usingSliceFunction(){
+
+ 
+
+    let letter ="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+       
+     document.getElementById('example4').innerHTML= "Slice() extracts a part of a string and returns the extracted part in a new string." +"<br>"+
+
+ "The method takes 2 parameters: the start position, and the end position (end -1)"+"<br>"+
+    "Here is the example of slicing letters ABCDEFGHIJKLMNOPQRSTUVWXYZ: slice(0,7)" +"<br>"+"output is: "+  letter.slice(0,7);
+  
+}
+
+function usingSubstringFunction(){
+  
+   let letter ="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+   
+   document.getElementById('example5').innerHTML="substring() is similar to slice()"+"<br>"+
+   "The difference is that substring() cannot accept negative indixes."+"<br>"+
+    
+    "substring(0,7) in 26 letter, output is: " +letter.substring(0,7);
+}
+function usingCharAt(){
+
+    let phrase = document.getElementById('example6').innerHTML;
+
+     document.getElementById('example6').innerHTML= phrase.charAt(6);
+}

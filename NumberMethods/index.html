@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset=" utf-8">
+    <title> JavaScript Numbers Functions</title>
+</head>
+
+<link rel="stylesheet" href="./style.css">
+
+<body>
+    <div>
+
+        <h1>JavaScript Number Manipulations</h1>
+        <p>JavaScript treats primitive values as objects when executing methods and properties.</p>
+    </div>
+
+    <div>
+        <h2>toString() Method</h2>
+        <p> toString() method returns a number as a string.
+            <br>
+            Syntax<br>
+            number.toString();
+        </p>
+        <p id="example1"> Returns 2022 using toString() (Press the button)</p>
+
+        <button onclick="toStringMeth()">toStringMethod</button>
+    </div>
+
+    <div>
+        <h2>toFixed() Method</h2>
+        <p> toFixed() returns a string, with the number written with a specified number of decimals.
+            <br> NOTE: toFixed(2) is perfect for working with money. <br>It also rounds the decimals for you.
+            <br>
+            Syntax: <br>
+            number.toFixed(specified-how-many-decimal-numbers-you-want)
+        </p>
+
+        <p id="example2">toFixed() is used when the numbers have a lot of decimal points. (press the button)</p>
+
+        <button onclick="toFixedMeth()">toFixedMethod</button>
+
+    </div>
+
+    <div>
+        <h2>parseInt() Method</h2>
+        <p>parseInt() converts a string and returns a whole number.
+            <br> You can use spaces. But it only returns the first number after space. <br>
+
+            NOTE: we cannot use parseInt to convert a word to a number.
+
+            <br>
+            Syntax<br>
+            parseInt(string);
+        </p>
+
+        <p id="example3">Converting "2022" to a number: (press the button)</p>
+
+        <button onclick="parseIntMeth()">parseIntMethod</button>
+
+    </div>
+
+    <div>
+        <h2>parseFloat() Method</h2>
+        <p> parseFloat() parses a string and returns a number.<br> Also spaces are allowed. Only returns the
+            first number after the space.<br>
+            Syntax<br>
+            parseFloat(string);
+        </p>
+
+        <p id="example4">Converting "77.78" using parseFloat(). (press the button)</p>
+
+        <button onclick="parseFloatMeth()">parseFloat</button>
+
+    </div>
+
+    <div>
+        <h2> NaN</h2>
+        <p> NaN stands for Not a Number</p>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

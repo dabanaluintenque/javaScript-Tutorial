@@ -51,7 +51,7 @@ function usingSliceFunction(){
      document.getElementById('example4').innerHTML= "Slice() extracts a part of a string and returns the extracted part in a new string." +"<br>"+
 
  "The method takes 2 parameters: the start position, and the end position (end -1)"+"<br>"+
-    "Here is the example of slicing letters ABCDEFGHIJKLMNOPQRSTUVWXYZ: slice(0,7)" +"<br>"+"output is: "+  letter.slice(0,7);
+    "Here is the example of slicing letters ABCDEFGHIJKLMNOPQRSTUVWXYZ: slice(0,7)" +"<br>"+"output is: "+  letter.slice(0,26);
   
 }
 
@@ -69,4 +69,11 @@ function usingCharAt(){
     let phrase = document.getElementById('example6').innerHTML;
 
      document.getElementById('example6').innerHTML= phrase.charAt(6);
+}
+
+function replaceMeth(){
+
+ let text = document.getElementById('example7').innerHTML;
+
+   document.getElementById('example7').innerHTML=text.replace("Dabana", "Jorge");
 }

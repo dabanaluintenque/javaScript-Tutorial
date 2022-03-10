@@ -40,20 +40,23 @@
     <div>
 
         <h2> String methods</h2>
-        <p>There are 3 methods for extracting a part of a String.</p>
+        <p>There are several methods for extracting a part of a String.</p>
         <ul>
             <li>slice(start, end)</li>
             <li>substring(start, end)</li>
             <li>substr(start, length)</li>
             <li>charAt(position)</li>
+            <li>replace("oldValue","newValue")</li>
         </ul>
 
         <p id="sliceMethod">How to use String slice () Method? (click the button to learn)</p>
         <p id="example4"></p>
+        <p>NOTE: the end-1 mean that the computer start count at 0.</p>
         <button onclick="usingSliceFunction()">sliceMethod</button>
 
         <p id="substringMethod">How to use String substring() Method? (click the button to learn)</p>
         <p id="example5"></p>
+
         <button onclick="usingSubstringFunction()">substringMethod</button>
 
         <div>
@@ -65,9 +68,22 @@
             <button onclick="usingCharAt()">charAt</button>
 
         </div>
+        <div>
 
+            <h2> String replace() method</h2>
+            <p>The replace method takes to parameter: replace("originalValue","newValue").
+                <br>Keep one thing in mind those string methods do not delete the original string it just change it for
+                the moment.
+            </p>
+
+            <p id="example7">Replace Hello Dabana. (It will replace Dabana to Jorge)</p>
+
+            <button onclick="replaceMeth()">replaceMethod</button>
+
+        </div>
 
     </div>
+
 
     <script src="./app.js"></script>
 

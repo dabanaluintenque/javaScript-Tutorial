@@ -77,3 +77,29 @@ function replaceMeth(){
 
    document.getElementById('example7').innerHTML=text.replace("Dabana", "Jorge");
 }
+
+function searchMeth(){
+
+
+    let text = document.getElementById('example8').innerHTML;
+
+    let find = document.getElementById('example8').innerHTML=text.search('Dabana');
+
+  /*  
+                   Extra
+  
+  let searching = document.getElementById('infor');
+
+    if(find>30){
+
+
+        searching.innerHTML="The value you are searching for is at the end of the phrase."
+
+        
+    }
+
+    else{
+
+       searching.innerHTML="keep looking"
+    } */
+}

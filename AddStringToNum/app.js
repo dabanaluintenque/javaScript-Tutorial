@@ -75,7 +75,8 @@ function replaceMeth(){
 
  let text = document.getElementById('example7').innerHTML;
 
-   document.getElementById('example7').innerHTML=text.replace("Dabana", "Jorge");
+
+   document.getElementById('example7').innerHTML=text.replace("Dabana", "Jorge"); 
 }
 
 function searchMeth(){
@@ -103,3 +104,24 @@ function searchMeth(){
        searching.innerHTML="keep looking"
     } */
 }
+
+function matchMeth(){
+
+    let words = document.getElementById('example9').innerHTML;
+       
+
+  let allLength =   document.getElementById('example9').innerHTML= words.match(/ke/gi);
+
+  if(allLength!==null){
+ document.getElementById('info').innerHTML="the length is: "+allLength.length;
+    
+  }
+}
+
+function includesMeth(){
+
+    let text = document.getElementById('example10').innerHTML;
+
+    document.getElementById('example10').innerHTML= text.includes('bad',0);
+}
+

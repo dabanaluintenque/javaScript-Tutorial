@@ -71,9 +71,14 @@
         <div>
 
             <h2> String replace() method</h2>
-            <p>The replace method takes to parameter: replace("originalValue","newValue").
-                <br>Keep one thing in mind those string methods do not delete the original string it just change it for
+            <p>The replace method takes as parameter: replace("originalValue","newValue").
+                <br>Keep one thing in mind those string methods do not delete the original string it just changes them
+                for
                 the moment.
+                <br>
+                Note: If you want to use rex for replacing all. Do not use quotes instead "Dabana" use /Dabana/g will
+                replace all the
+                lines that have Dabana.
             </p>
 
             <p id="example7">Replace Hello Dabana. (It will replace Dabana to Jorge. click the button)</p>
@@ -83,17 +88,52 @@
         </div>
 
         <div>
-            <h2> String Search() Method </h2>
+            <h2> String search() Method </h2>
             <p>Search() method searches a string for a specified value and returns the position of the value if finds a
                 match.</p>
 
             <p id='example8'>Return the postiion of the name Dabana (click the button)</p>
 
-            <p id="infor"></p>
+            <!--<p id="infor"></p>-->
 
             <button onclick="searchMeth()">searchMethod</button>
 
         </div>
+
+        <div>
+            <h2> String match() Method</h2>
+
+            <p> match() method searches a string for a match against a regular expression, and returns the matches<br>
+                as in Array object if the elements exits else it returns null.</p>
+
+            <p id="example9">Return the pattern of the words. make BRAKE lake day may like bike<br>
+                and hand look book draw paw but cut take shake</p>
+
+            <p id="info"></p>
+
+            <button onclick="matchMeth()">matchMethod</button>
+        </div>
+
+        <div>
+            <h2>String includes() Method</h2>
+
+            <p>includes() returns true if a string contains the word you are looking for otherwise it returns false.<br>
+                Syntax<br>
+                string.includes("stringValue", startPosition)<br>
+
+                It required the string to search for<br>
+                The start position is Optional. The default is 0.
+
+
+            </p>
+
+            <p id="example10">Don't say bad words to someone.</p>
+
+            <button onclick="includesMeth()">includesMethod</button>
+
+
+        </div>
+
 
     </div>
 

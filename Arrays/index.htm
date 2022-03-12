@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title> JavaScript Arrays</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <div>
+        <h1> JavaScript Arrays </h1>
+        <p>Arrays is a special variable that holds more than one value.</p>
+    </div>
+
+    <div>
+        <h2>How to create and call an Array?</h2>
+
+        <p>
+            <d>Syntax</d><br>
+            const variableName = [item, item1, item2, item3,...itemN]
+            <br>
+        <p id="example1">Store the names of the students in Comp335 Class. (click the button)</p>
+
+        <button onclick="callArray()">callAnArray</button>
+        </p>
+    </div>
+    <div>
+        <h2> Array length Property</h2>
+        <p> length property of an array returns the length of an array. (Returns the number of the element inside
+            array).
+            <br>
+            <d>Syntax</d> <br>
+            arrayName.lenght
+            <br>
+            <d>Syntax</d> to access last element of an array.<br>
+
+            arrayName[arrayName.length-1];
+        </p>
+
+
+        <p id="example2">Return the length of the students in comp335 class. (click the button)</p>
+
+        <button onclick="arrayLength()">arrayLength</button>
+
+    </div>
+
+    <div>
+        <h2>Looping through an Array.</h2>
+
+        <p id="example3">print the students' names using for loop. (click the button)</p>
+        <button onclick="arrayLooping()">arrayForLoop</button>
+
+    </div>
+
+    <div>
+        <h2> Array join() Method</h2>
+        <p>join() method joins array elements into a string.<br> But inside the join parameter, we can separate the
+            elements.
+
+            <br>
+            <d>Syntax</d><br>
+
+            arrayName.join("Use-Separator-Symbol-Here");
+
+        </p>
+
+
+        <p id="example4">join the students names in comp335 class. (click the button)</p>
+
+        <button onclick="joinMeth()">joinMethod</button>
+    </div>
+
+    <div>
+        <h2>pop() Method</h2>
+        <p>pop() removes the last element of an array and returns that element.
+            <br>
+            pop () method came from stack last in first out. <br>
+
+            <d>pop() simple mean removeLast();</d><br>
+            <d>Syntax</d><br>
+            arrayName.pop();
+
+        <p id="example5">pop() and return the last student name in comp335 class. (click the button)</p>
+        <p id="example6">Note: When we pop() a student it will return the student name.</p>
+        <p id="example7"></p>
+
+        <button onclick="popMeth()">popMethod</button>
+
+
+        </p>
+    </div>
+
+    <div>
+
+        <h2>push() Method</h2>
+
+        <p>push() adds an element at the end of an array and returns the length of the array. <br>
+
+            <d>push() simple mean addLast(newValue);</d><br>
+            <d>Syntax</d><br>
+            arrayName.push(newValue);
+
+        </p>
+
+        <p id="example8">push() a new student to the comp335 class. (click the button)</p>
+
+        <p id="example9">Note: When we push() a new student, it will return the length.</p>
+
+        <p id="example10"></p>
+
+        <button onclick="pushMeth()">pushMethod</button>
+    </div>
+
+    <div>
+        <h2>shift() Method </h2>
+        <p> shift() method is similar to the pop() method, but it removes the first element instead of the last.<br>
+            shift() method remove the first element of the array and shifts all other elements to the lower index.<br>
+            Note: shift method returns the value that was shifted. <br>
+
+            <d>shfit() simple mean removeFirst();</d><br>
+            <d>Syntax</d> <br>
+
+            arrayName.shift();
+
+        </p>
+
+        <p id="example11"> shift the student in comp335 class. (click the button)</p>
+
+        <p id="example12">Note: when we shift() a student it will return the student name.</p>
+
+        <p id="example13"></p>
+
+
+        <button onclick="shiftMeth()">shiftMethod</button>
+
+    </div>
+
+    <div>
+        <h2>unshift() Method</h2>
+
+        <p>unshift() adds a new element at the beginning of an array and returns the new length of the array.<br>
+            <d>unshift simple mean addFirst().</d> <br>
+            <d>Syntax</d><br>
+            arrayName.unshift(newValue).
+        </p>
+        <p id="example14">unshift the students in comp335 class. (click the button)</p>
+        <p id="example15">Note: When we unshift() a new student, it will return the length.</p>
+        <p id="example16"></p>
+
+        <button onclick="unshiftMeth()">unshiftMethod</button>
+
+
+    </div>
+
+    <div>
+        <h2>splice() Method</h2>
+        <p>
+        <ol>
+            <li>splice() method can be used to add a new items anywhere in array.</li>
+            <li>spice() method can be used also to remove an item in array.</li>
+            <li>splice() method can be used to add as much items we want to add to an array.</li>
+        </ol>
+        <d>Syntax</d><br>
+        <d>arrayName.splice(positionToAdd, elementToRemove, newValue);</d><br>
+        Example: studants.splice(4, 0, "Jannah", "Reece ", "Blair"); <br>
+
+        <ol>
+            <li>The first parameter (4) defines the position where new elements should be added.</li>
+            <li>The second parameter (0) defines how many elements should be removed. In the example above none.</li>
+            <li>The third parameter ("Jannah", "Reece", "Blair") define the new elements to be added.</li>
+        </ol>
+        Note: The splice()method returns an array with the deleted items.
+
+        </p>
+
+        <p id="example17">splice() students in comp335 class: (press the button)</p>
+
+        <p id="example18">Note: The splice()method returns an array with the deleted items (in this case, it will return
+            the name of the removed student).</p>
+        <p id="example19"></p>
+
+        <button onclick="spliceMeth()">spliceMethod</button>
+    </div>
+
+    <div>
+        <h2>slice()</h2>
+
+        <p>
+            slice() method slice's out a piece of an array into a new array. <br>
+            NOTE:
+        <ol>
+            <li>slice() method creates a new array.</li>
+            <li>slice() method does not remove any elements from the source array.</li>
+            <li>slece() method returns a new array.</li>
+            <li>Slice is like when we use a break-out room in zoom call.<br> We do not remove any student from the
+                class.
+                We simple separate them. In the end, we all come back to the same room.</li>
+        </ol>
+        <d>Syntax<br>
+            arrayName.slice(star, end)<br>
+            or arrayName.slice(star);</d> <br>
+
+        Note:
+        The first parameter (star) is required but the end parameter is optional.<br>
+        All depends in how we want to slice an Array.
+        </p>
+
+        <p id="example20"> slice() students in comp335 class. (click the button).</p>
+
+        <p id="example21"></p>
+        <p id="example22"></p>
+
+        <button onclick="sliceMeth()">sliceMethod</button>
+    </div>
+
+    <div>
+        <h2>sort() Method</h2>
+        <p>sort() method sorts the element of an array alphabetically.<br>
+
+            <d>Syntax<br>
+
+                arrayName.sort();
+            </d>
+
+        </p>
+
+
+        <p id="example23">sort() the students in comp335 class.</p>
+        <p id="example24"></p>
+
+        <button onclick="sortMeth()">sortMethod</button>
+
+    </div>
+    <div>
+        <h2>sort() Numericaly </h2>
+        <p>
+            By default, the sort() function sorts values as a string.<br>
+            If we want to sort() numbers, we must use a different approach.<br>
+            If we apply the sort() method directly in an array of numbers. It will produce an incorrect result.<br>
+            To fix this JavaScript provide a compare function.
+        </p>
+        <div>
+            <h5> The Compare Function</h5>
+            <p>The compare function return a negative, zero, or positive value, depending on the arguments.<br>
+                <d>Syntax<br>
+                    arrayName.sort(function(a,b){return a-b});
+                </d> <br>
+                When the sort() method compares two values, it sends the values to the compare function,<br>
+                and sorts the values acording to the returned (- , + , or 0) values.<br>
+
+                <d>
+                    If the result is negative</d> it means <d>a < b</d> sort <d>a</d> before <d>b</d> (Eg. 1 < 2).
+                            Ascendent order;<br>
+
+                            <d>If the result is pusitive</d> it means <d>b > a</d> sort <d>b</d> before <d>a</d>
+                            (Eg. 2 > 1 ).
+                            Descendent
+                            order;<br>
+
+                            <d>Else if the result is zero</d>, no further action needs to be taken the two numbers are
+                            equal.<br>
+                            Eg.<br>
+
+                            The compare function compare two values at the time <d>(a,b)</d> in the array.<br>
+
+                            Example: comparing 7 and 10, the <d>sort()</d> method calls compare function(7,10).<br>
+
+                            Then the compare function calculates 7 - 10 <d>(a-b)</d>, the result is negative (-3)<br>
+
+                            Since the result is negative the <d>sort()</d> function will sort() 7 before 10.
+            </p>
+
+            <p id="example25">sort() the students grades in comp335 class.(press the button).</p>
+
+            <p id="example26">Note: When comparing the numbers. If we use sort() without <br> compare function. It will
+                produce an incorrect result.</p>
+            <p id="example27"></p>
+
+            <button onclick="sortNumbers()">sortNumbers</button>
+
+        </div>
+    </div>
+
+    <div>
+        <h2>reverse() Method</h2>
+        <p> reverse() method reverse the element of an array. <br>
+
+            A best parctice is to call sort() function before reverse. <br>
+
+            <d>Syntax</d><br>
+            arraName.reverse();
+        </p>
+
+        <p id="example28">Reverse the students in comp335 class. (click the buttom)</p>
+
+        <p id="example29"></p>
+
+        <p id="example30"></p>
+
+        <button onclick="reverseMeth()">reverseMethod</button>
+
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

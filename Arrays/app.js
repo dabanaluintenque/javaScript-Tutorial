@@ -141,9 +141,65 @@ function reverseMeth(){
 
       students.sort() ; 
     document.getElementById('example30').innerHTML=" call sort() before reverse(): <br> " + students.reverse().join(", ");
+
+}
+
+function findMinValue(){
+
+    const grades =[ 90, 95, 100, 85, 70, 65, 80, 95];
+
+    document.getElementById('example31').innerHTML= "Grades: <br> "+ grades.join("<br>");
+
+     grades.sort(function(a,b){return a-b}); 
+    document.getElementById('example32').innerHTML= "The lowest grade is: "+grades[0];
+}
+
+
+
+function arrayMinValue(){
+
+     const grades =[90,95,100,85,70, 65, 80, 97];
+
+    let arrayLength = grades.length;
+
+    let currentMin = Infinity;
+
+    while(arrayLength--){
+
+        if(grades[arrayLength] < currentMin)
+
+        currentMin= grades[arrayLength];
+    }
+
+   /*  for(let i = 1; i< arrayLength; i ++){
+
+        if( grades[i]< currentMin)
+         currentMin = grades[i];
+       
+    } */
+
+    document.getElementById('example33').innerHTML="The lowest grade is: "+ currentMin;
+}
+
+function arrayMaxValue(){
+
+    const grades =[ 90,95,100,85, 70, 65, 80, 97];
+
+    let arrayLength = grades.length;
+
+    let correntMax = - Infinity;
+
+    while(arrayLength--){
+
+
+        if(grades[arrayLength] > correntMax)
+
+        correntMax = grades[arrayLength];
+    }
+
+    document.getElementById('example34').innerHTML=" The highest grade is: " +correntMax;
 }
 
 
 
 
- 

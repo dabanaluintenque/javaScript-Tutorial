@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title> JavaScript Dates</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <h1> JavaScript Dates Functions</h1>
+
+    <div>
+        <h2> There are fours ways to create a new date in JavaScript.</h2>
+
+        <ol>
+            <li>new Date()</li>
+            <li>new Date(year, month, day, hours, minutes, seconds, milliseconds)</li>
+            <li>new Date(milliseconds)</li>
+            <li>new Date(date string)</li>
+        </ol>
+    </div>
+
+    <div>
+        <h2> Use new Date() object</h2>
+        <p>new Date() will create a new date object with the current data and time. <br>
+            <d>Syntax</d><br>
+            const todayDate = new Date();
+        </p>
+
+        <p id="example1">What is today's date? (click the button)</p>
+
+        <button onclick="newDateObject()">todayDate</button>
+    </div>
+
+    <div>
+        <h2> new Date(year, month, day, hours, minutes, seconds, milliseconds)</h2>
+        <p>
+            when creating a new date object with 7 parameters it will specified date and time.<br>
+
+            <d>Syntax</d><br>
+
+            const createNewDate = new Date(year, month, hours, minutes, seconds, milliseconds); <br>
+
+            <d>Note:</d> One thing to keep in mind the numbers of month's start at 0.<br>
+            January = 0<br>
+            Februare = 1<br>
+            .
+            .
+            .
+            <br>
+            December= 11 <br>
+
+            Also we do not need to use all the seven parameters.<br>
+
+            <d>Example:</d> we can use just year month and day;<br>
+
+            const finalExamDay = new Date(2022, 4, 10);
+
+        </p>
+
+        <p id="example2">When is the comp335 class final exam? (click the button)</p>
+
+        <button onclick="newDateWithSevenP()">newDateWith7parameters</button>
+    </div>
+    <div>
+        <h2> new Date(dateString)</h2>
+        <p>
+            new Date(dateString) creates a new date object from a date String. <br>
+
+            <d>Syntax</d><br>
+            const DateStr = new Date("December 1, 2000, 07:47:00");
+        </p>
+
+        <p id="example3">What date did the comp335 start? (click the button) </p>
+
+        <button onclick="newDateString()">dateString</button>
+    </div>
+
+    <div>
+        <h2> short Date format </h2>
+        <p> Short Dates are written with an "MM/DD/YYYY"<br>
+
+            <d>Syntax:</d><br>
+
+            const ShortDate = new Date("12/01/2000");
+        </p>
+
+        <p id="example4"> One of the student in comp335 class was born in. (click the button)</p>
+
+        <button onclick="shortDateFormat()">shorDate</button>
+
+
+    </div>
+
+    <div>
+        <h2> Get Date Methods</h2>
+
+        <h4> getFullYear():<small> Get the year as a four digit number(yyyy).</small><br>
+            getMonth(): <small>Get the month as a number (0-11)</small><br>
+            getDate(): <small>Get day as a number (1-31)</small><br>
+            getHours(): <small>Get hours(0-23)</small><br>
+            getMinutes(): <small>Get minute(0-59)</small><br>
+            getSeconds(): <small>Get second(0-59)</small><br>
+            getDay(): <small>Get the weekday as a number(0-6)</small><br>
+            Date.now(): <small>Get the time</small>
+
+        </h4>
+    </div>
+
+    <div>
+        <h2> getFullYear</h2>
+        <p> getFullYear() method return the year of a date as a four digit number.<br>
+
+            <d>Syntax</d><br>
+
+            const currentYear = new Date();<br>
+            currentYear.getFullYear();
+
+        </p>
+
+
+        <p id="example5">Get the current year. (click the button)</p>
+
+        <button onclick="getCurrentYearMeth()">CurrentYearMethod</button>
+    </div>
+
+    <div>
+        <h2> getMonth() Method</h2>
+
+        <p> getMonth() method returns the month of a date as a number(0-11)<br>
+
+            <d>Syntax</d><br>
+
+            const currentMonth = new Date();<br>
+            currentMonth.getMonth();
+
+        </p>
+
+        <p id="example6"> Get the current month. (click the button) </p>
+
+        <button onclick="getCurrentMonthMeth()">CurrentMonthMethod</button>
+    </div>
+
+    <div>
+        <h2> getDate() Method will return the day.</h2>
+
+        <p> getDate() method returns the day of a date as a number (1-31).<br>
+
+            <d>Syntax</d><br>
+
+            const currentDay = new Date(); <br>
+
+            currentDay.getDate();
+
+        </p>
+        <p id="example7"> Get current day. (click the button).</p>
+
+        <button onclick="getCurrentDayMeth()">CurrentDayMehtod</button>
+    </div>
+
+    <div>
+        <h2> getHours() Method</h2>
+
+        <p> getHours() method returns the hours of a date as a number(0-23)<br>
+            <d>Syntax</d><br>
+
+            const currentHours = new Date();<br>
+
+            currentHours.getHours();
+
+        </p>
+
+        <p id="example8"> Get current hour. (click the button)</p>
+
+        <button onclick="getCurrentHoursMeth()">currentHourMethod</button>
+
+
+    </div>
+
+    <div>
+        <h2> getMinutes() Method</h2>
+
+        <p>
+            getMinutes() method returns the minutes of a date as a number (0-59). <br>
+
+            <d>Syntax</d><br>
+            const currentMinutes = new Date(); <br>
+
+            currentMinutes.getMinutes();
+
+        </p>
+        <p id="example9"> Get current minutes. (click the button)</p>
+
+        <button onclick="getCurrentMinutesMeth()">currentMinutesMethod</button>
+    </div>
+
+    <div>
+        <h2> getSeconds() Method</h2>
+        <p>
+            getSeconds() method return the seconds of a date as a number (0-59).<br>
+            <d>Syntax</d><br>
+            const currentSecond = new Date()<br>
+            currentSecond.getSeconds();
+        </p>
+        <p id="example10"> Get current second: (click the button)</p>
+
+        <button onclick="getCurrentSecondsMeth()">currentSecondMethod</button>
+    </div>
+
+    <div>
+        <h2> getDay() Method return the Weekday number</h2>
+
+        <p>
+            getDay() method return the weekday of a date as a number(0-6).<br>
+
+            <d>Syntax</d><br><br>
+            const currentWeekDay = new Date();<br>
+
+            currentWeekDay.getDay();
+        </p>
+        <p id="example11">Get the current weekDay: (click the button)</p>
+
+        <button onclick="getCurrentWeekMeth()">currentWeekMethod</button>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
+
+</html>

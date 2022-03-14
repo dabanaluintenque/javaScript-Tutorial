@@ -85,3 +85,12 @@ function getCurrentWeekMeth(){
 
 
 }
+
+function setYearMeth(){
+
+    const myYear = new Date();
+
+    myYear.setFullYear(2000);
+
+     document.getElementById('example12').innerHTML= "setting year to: " + myYear;
+}

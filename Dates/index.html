@@ -229,6 +229,41 @@
         <button onclick="getCurrentWeekMeth()">currentWeekMethod</button>
     </div>
 
+    <div>
+        <h2> Set Date Methods</h2>
+        <h4>setDate() <small>set the day as a number (1-31)</small><br>
+            setFullYear() <small>set the year (optionally month and day)</small><br>
+            setMonth() <small> set the month (0-11)</small><br>
+            setHours() <small> set the hour(0-23)</small><br>
+            setSeconds() <small>set the seconds (0-59)</small><br>
+            setMinutes() <small> set The minutes (0-59)</small><br>
+            setMilliseconds() <small> set the milliseconds (0-999)</small><br>
+            setTime() <small> set the time (milliseconds since January 1, 1970)</small>
+
+
+        </h4>
+
+    </div>
+    <div>
+
+        <h2>setFullYear() Method</h2>
+        <p> setFullYear() method sets the year of a date object. <br>
+            <d>Syntax</d><br>
+            const myYear = new Date();<br>
+            myYear.setFullYear(2000); <br>
+            Or Optional <br>
+            We can set the month and day too.<br>
+            myYear.setFullYear(2000,11,01);
+
+        </p>
+
+        <p id="example12">set the year to 2000. (click the button)</p>
+
+        <button onclick="setYearMeth()">theSetYearMethod</button>
+
+
+    </div>
+
     <script src="./app.js"></script>
 </body>
 
